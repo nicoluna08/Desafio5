@@ -1,0 +1,27 @@
+<%- include("./partials/main.ejs")%>
+
+<body>
+<div>
+    <h2>listado productos</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th>codigo</th>
+                <th>precio</th>
+                <th>imagen</th>
+            </tr>        
+    <% product.forEach((unproducto) => { %>
+    <tr>                
+    <td><%= unproducto.title %></td>
+    <td><%= unproducto.price %></td>
+    <td>
+    <img src=<%= unproducto.thumbnail %> style="width: 100px" >
+    </td>
+   </tr>
+    <%}) %>
+    </table>
+   
+</div>
+
+</body>
+

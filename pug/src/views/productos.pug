@@ -1,0 +1,46 @@
+
+
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Hecho en pug
+body
+    nav
+        li
+            a(href='/') Carga Productos   
+        li
+            a(href='productos') Listado Productos   
+        
+
+
+
+
+
+body
+    form(action="/productos" method="POST")
+        br
+        div
+            label Producto:
+            p 
+            input(type="text" name="title")
+        br
+        div
+            label Precio:
+            p 
+            input(type="number" name="price")
+        br
+        div
+            label Thumbnail:
+            p 
+            input(type="text" name="thumbnail")
+        br
+        p
+        input(type="submit" value="Agregar")
+
+
+
+
+
+
